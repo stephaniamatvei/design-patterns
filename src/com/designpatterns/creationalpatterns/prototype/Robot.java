@@ -8,7 +8,7 @@ public class Robot implements Cloneable {
     private List<String> features;
     private Components components;
 
-    public Robot(int ID, List<String> features, Components components){
+    public Robot(int ID, List<String> features, Components components) {
         this.ID = ID;
         this.features = features;
         this.components = components;
@@ -46,5 +46,6 @@ public class Robot implements Cloneable {
             return null;
         }
     }
+
 }
 
