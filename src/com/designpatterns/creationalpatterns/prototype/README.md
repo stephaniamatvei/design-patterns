@@ -4,6 +4,7 @@
 
 * [Intent](#intent)
 * [Problem](#problem)
+* [Discussion](#discussion)
 * [Solution](#solution)
 * [Structure](#structure)
 * [Applicability](#applicability)
@@ -16,10 +17,17 @@ Say you have an object, and you want to create an exact copy of it. How would yo
 
 Nice! But there’s a catch. Not all objects can be copied that way because some of the object’s fields may be private and not visible from outside of the object itself.
 
-### Solution
+There’s one more problem with the direct approach. Since you have to know the object’s class to create a duplicate, your code becomes dependent on that class. Another catch is that sometimes you only know the interface that the object follows, but not its concrete class, when, for example, a parameter in a method accepts any objects that follow some interface.
+
+### Discussion
 Declare an abstract base class that specifies a pure virtual "clone" method, and, maintains a dictionary of all "cloneable" concrete derived classes. Any class that needs a "polymorphic constructor" capability: derives itself from the abstract base class, registers its prototypical instance, and implements the `clone()` operation.
 
 The client then, instead of writing code that invokes the "new" operator on a hard-wired class name, calls a "clone" operation on the abstract base class, supplying a string or enumerated data type that designates the particular concrete derived class desired.
+
+### Solution
+The Prototype pattern delegates the cloning process to the actual objects that are being cloned. The pattern declares a common interface for all objects that support cloning. This interface lets you clone an object without coupling your code to the class of that object. Usually, such an interface contains just a single `clone` method.
+
+Here’s how it works: you create a set of objects, configured in various ways. When you need an object like the one you’ve configured, you just clone a prototype instead of constructing a new object from scratch.
 
 ### Structure
 1. The **Prototype** interface declares the cloning methods. In most cases, it’s a single `clone` method.

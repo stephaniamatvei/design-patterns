@@ -4,7 +4,7 @@
 
 * [Intent](#intent)
 * [Problem](#problem)
-* [Solution](#solution)
+* [Discussion](#discussion)
 * [Structure](#structure)
 
 ### Intent
@@ -15,7 +15,7 @@ Object pools (otherwise known as resource pools) are used to manage the object c
 
 It is desirable to keep all Reusable objects that are not currently in use in the same object pool so that they can be managed by one coherent policy. To achieve this, the Reusable Pool class is designed to be a singleton class.
 
-### Solution
+### Discussion
 The Object Pool lets others "check out" objects from its pool, when those objects are no longer needed by their processes, they are returned to the pool in order to be reused.
 
 However, we don't want a process to have to wait for a particular object to be released, so the Object Pool also instantiates new objects as they are required, but must also implement a facility to clean up unused objects periodically.

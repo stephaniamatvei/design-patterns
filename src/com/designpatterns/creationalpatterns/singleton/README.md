@@ -4,6 +4,7 @@
 
 * [Intent](#intent)
 * [Problem](#problem)
+* [Discussion](#discussion)
 * [Solution](#solution)
 * [Structure](#structure)
 * [Applicability](#applicability)
@@ -13,6 +14,11 @@
 
 ### Problem
 Application needs one, and only one, instance of an object. Additionally, lazy initialization and global access are necessary.
+
+### Discussion
+Make the class of the single instance object responsible for creation, initialization, access, and enforcement. Declare the instance as a private static data member. Provide a public static member function that encapsulates all initialization code, and provides access to the instance.
+
+The client calls the accessor function (using the class name and scope resolution operator) whenever a reference to the single instance is required.
 
 ### Solution
 All implementations of the Singleton have these two steps in common:
