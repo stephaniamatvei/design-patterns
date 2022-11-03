@@ -7,7 +7,7 @@
 * [Discussion](#discussion)
 * [Solution](#solution)
 * [Structure](#structure)
-* [Applicability](#applicability)
+* [When to use the prototype pattern?](#when-to-use-the-prototype-pattern?)
 
 ### Intent
 **Prototype** is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.
@@ -34,7 +34,7 @@ Here’s how it works: you create a set of objects, configured in various ways. 
 2. The **Concrete Prototype** class implements the cloning method. In addition to copying the original object’s data to the clone, this method may also handle some edge cases of the cloning process related to cloning linked objects, untangling recursive dependencies, etc.
 3. The **Client** can produce a copy of any object that follows the prototype interface.
 
-### Applicability
-- Use the Prototype pattern when your code shouldn’t depend on the concrete classes of objects that you need to copy.
-- Use the pattern when you want to reduce the number of subclasses that only differ in the way they initialize their respective objects.
+### When to use the prototype pattern?
+- When your code shouldn’t depend on the concrete classes of objects that you need to copy.
+- When you want to reduce the number of subclasses that only differ in the way they initialize their respective objects.
 
