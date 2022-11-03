@@ -7,7 +7,7 @@
 * [Discussion](#discussion)
 * [Solution](#solution)
 * [Structure](#structure)
-* [When to use the singleton pattern?](#when-to-use-the-singleton-pattern?)
+* [When to use the Singleton pattern?](#when-to-use-the-singleton-pattern)
 
 ### Intent
 **Singleton** is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
@@ -32,7 +32,7 @@ All implementations of the Singleton have these two steps in common:
 
 The Singleton’s constructor should be hidden from the client code. Calling the `getInstance` method should be the only way of getting the Singleton object.
 
-### When to use the singleton pattern?
+### When to use the Singleton pattern?
 - When a class in your program should have just a single instance available to all clients; for example, a single database object shared by different parts of the program.
 - When you need stricter control over global variables.
 

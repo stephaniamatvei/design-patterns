@@ -6,7 +6,7 @@
 * [Problem](#problem)
 * [Solution](#solution)
 * [Structure](#structure)
-* [When to use the builder pattern?](#when-to-use-the-builder-pattern?)
+* [When to use the Builder pattern?](#when-to-use-the-builder-pattern)
 * [Diagram](#diagram)
 
 ### Intent
@@ -26,7 +26,7 @@ The Builder pattern suggests the object construction code to be extracted out of
 5. The **Client** must associate one of the builder objects with the director.
 
 
-### When to use the builder pattern?
+### When to use the Builder pattern?
 - when dealing a complex object that requires a lot of parameters;
 - when trying to prevent mistakes from creating a complex object;
 - when trying to avoid unreadable, big constructors that are sometimes required for complex objects creation.

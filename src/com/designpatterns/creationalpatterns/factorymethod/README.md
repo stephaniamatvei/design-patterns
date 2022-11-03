@@ -7,7 +7,7 @@
 * [Problem](#problem)
 * [Solution](#solution)
 * [Structure](#structure)
-* [When to use the factory pattern?](#when-to-use-the-factory-pattern?)
+* [When to use the Factory pattern?](#when-to-use-the-factory-pattern)
 * [Advantages](#advantages)
 * [Disadvantages](#disadvantages)
 * [Diagram](#diagram)
@@ -28,7 +28,7 @@ The Factory Method pattern suggests that you replace direct object construction 
 4. **Concrete Creators** override the base factory method so it returns a different type of product.
 
 
-### When to use the factory pattern?
+### When to use the Factory pattern?
 - When you don’t know beforehand the exact types and dependencies of the objects your code should work with.
 - When you want to provide users of your library or framework with a way to extend its internal components.
 - When you want to save system resources by reusing existing objects instead of rebuilding them each time.
