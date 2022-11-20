@@ -30,4 +30,4 @@ The first thing the Abstract Factory pattern suggests is to explicitly declare i
 
 ### Diagram
 
-![](../../../../resources/images/abstract-factory-diagram2.png)
+![](../../../../resources/images/abstract-factory.png)

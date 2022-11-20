@@ -32,4 +32,4 @@ The Builder pattern suggests the object construction code to be extracted out of
 - when trying to avoid unreadable, big constructors that are sometimes required for complex objects creation.
 
 ### Diagram
-![](../../../../resources/images/builder-diagram.png)
+![](../../../../resources/images/builder.png)

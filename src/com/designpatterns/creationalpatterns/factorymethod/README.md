@@ -43,4 +43,4 @@ The Factory Method pattern suggests that you replace direct object construction 
 
 ### Diagram
 
-![](../../../../resources/images/factory-method-diagram.png)
+![](../../../../resources/images/factory-method.png)

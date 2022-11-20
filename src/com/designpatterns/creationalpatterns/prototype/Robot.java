@@ -38,6 +38,8 @@ public class Robot implements Cloneable {
         this.components = components;
     }
 
+    // shallow clone: only primitives and references of objects are copied
+    @Override
     public Robot clone(){
         try {
             return (Robot) super.clone();
