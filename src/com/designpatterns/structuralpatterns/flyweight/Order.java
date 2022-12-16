@@ -9,7 +9,7 @@ public class Order {
         this.product = product;
     }
 
-    void manageOrder() {
+    public void manageOrder() {
         System.out.println("Order number: " + orderNumber + " contains " + product);
     }
 }
